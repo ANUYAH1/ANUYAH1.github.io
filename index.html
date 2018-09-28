@@ -13,7 +13,8 @@
 <a href="words.txt">Words </a>
     <script>
 	    
-        d3.text("data/words.txt").then(function(text) {
+        d3.text("words.txt").then(function(text) {
+			var data = text.split('\t');
 		    alert(data.length);
           
         });
