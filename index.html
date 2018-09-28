@@ -15,7 +15,7 @@
     <script>
 	    
         d3.tsv("data/results.csv", function(data) {
-		    var print  = document.getElementById(print);
+		    var print  = document.getElementById("print");
 		    for(int i=0;i<data.length;i++){
 			  print.document.appendChild(document.
 			  createTextNode(data[i].key +"&nbsp&nbsp"+data[i].value));
