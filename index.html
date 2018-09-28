@@ -11,20 +11,15 @@
 <body>
 
 <a href="words.txt">Words </a>
-<div id="print"></div>
     <script>
 	    
-        d3.tsv("data/results.csv", function(data) {
-		    var print  = document.getElementById("print");
-		    for(int i=0;i<data.length;i++){
-			  print.document.appendChild(document.
-			  createTextNode(data[i].key +"&nbsp&nbsp"+data[i].value));
-			}
+        d3.text("data/words.txt").then(function(data)) {
+		    alert(data);
           
         });
 
 		
-		console.log(d3);
+		// console.log(d3);
 
        console.log("hahahaha");
     </script>
