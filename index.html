@@ -9,13 +9,20 @@
 </head>
 
 <body>
+
 <a href="words.txt">Words </a>
+<div id="print"></div>
     <script>
-	     
-        d3.tsv("words.txt", function(data) {
-			console.log(data);
-			return data;
+	    
+        d3.tsv("data/results.csv", function(data) {
+		    var print  = document.getElementById(print);
+		    for(int i=0;i<data.length;i++){
+			  print.document.appendChild(document.
+			  createTextNode(data[i].key +"&nbsp&nbsp"+data[i].value));
+			}
+          
         });
+
 		
 		console.log(d3);
 
