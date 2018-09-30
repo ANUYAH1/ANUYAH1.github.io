@@ -15,7 +15,7 @@
 	    
         d3.text("words.txt").then(function(text) {
 			var data = text.split('\t');
-		    document.write(data);
+		    document.write(data.slice(0));
           
         });
 
