@@ -39,7 +39,7 @@ d3.tsv("words.txt", type, function(error, data) {
   x.domain(data.map(function(d) { return d.key; }));
   y.domain([0, d3.max(data, function(d) { return d.value; })]);
   
-  console.log(x);
+  console.log(data);
 
   svg.append("g")
       .attr("class", "x axis")
