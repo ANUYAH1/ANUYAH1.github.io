@@ -1,4 +1,4 @@
-words	frequency
+letter	frequency
 time	1833
 year	1639
 people	1256
