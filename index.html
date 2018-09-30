@@ -3,7 +3,7 @@
    <head>
       <meta charset="utf-8">
       <title>D3 assignment CS573</title>
-      <script src="//d3js.org/d3.v3.min.js"></script>
+      <script src="https//d3js.org/d3.v3.min.js"></script>
    </head>
    <body>
       <a href="words.txt">Words </a>
@@ -38,6 +38,8 @@ d3.tsv("words.txt", type, function(error, data) {
 
   x.domain(data.map(function(d) { return d.key; }));
   y.domain([0, d3.max(data, function(d) { return d.value; })]);
+  
+  console.log(x);
 
   svg.append("g")
       .attr("class", "x axis")
