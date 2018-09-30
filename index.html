@@ -25,13 +25,15 @@
       <script src="//d3js.org/d3.v3.min.js"></script>
       <script>
        
+         var data_value = [];
          
-         
-         var data = d3.tsv("words2.txt", function(dat) {
+         d3.tsv("words2.txt", function(dat) {
+		 
+		 data_value = dat
 		 console.log(dat);
 		 });
 		 
-		 alert(data);
+		 alert(data_value);
          
                
             
